@@ -1,3 +1,4 @@
 <?php 
-    echo "<h1> Hi </h1>";
+    $name = "Ali";
+    echo "<h1> Hi ".$name." </h1>";
 ?>
