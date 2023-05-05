@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/botstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
 </head>
 <body>
-<?php 
-    $name = "Ali";
-    echo "<h1> Hi ".$name." </h1>";
-?>
+<div class="container bg-primary"> 
+    <h1>Welcome </h1>
+</div>
 <footer>
     <script src="./js/bootstrap.min.js"></script>
 </footer>
