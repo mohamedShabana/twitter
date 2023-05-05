@@ -15,7 +15,7 @@
                     or die("Cann't connect DB");
                 $sql = "insert into twitte (twit_text) values ('".$tw."')";
                 if(mysqli_query($cxn, $sql)){
-                    echo "good work";
+                    header('Location: http://localhost:8080/twitter/index.php');
                 }else{
                     echo "error";
                 }
