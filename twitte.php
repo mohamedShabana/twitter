@@ -1,7 +1,7 @@
 <?php 
   include './include/header.php';
 ?>
-<div class="container"> 
+<div class="container mt-3"> 
     <div class="row">
         <div class="col-3">M</div>
         <div class="col-6">
@@ -13,8 +13,14 @@
                 $db="twitter";
                 $cxn= mysqli_connect($host,$user,$pass,$db)
                     or die("Cann't connect DB");
-                $sql = "insert into twitte(twit_text) values($tw)";
-                $cxn->exec($sql);
+                $sql = "insert into twitte (twit_text) values ('".$tw."')";
+                if(mysqli_query($cxn, $sql)){
+                    echo "good work";
+                }else{
+                    echo "error";
+                }
+
+                mysqli_close($cxn);
                 
             ?>
         </div>

@@ -1,7 +1,7 @@
 <?php 
   include './include/header.php';
 ?>
-<div class="container"> 
+<div class="container mt-3"> 
     <div class="row">
         <div class="col-3">
           <?php 
@@ -9,11 +9,13 @@
           ?>
         </div>
         <div class="col-6">
-            <form action="twitte.php" method="POST" class="">
-                <textarea name="artic" class="form-control mb-2">
-                </textarea>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+          <?php 
+            include './include/addtwitte.php';
+          ?>
+           <hr/>
+           <?php 
+            include './include/oldtwitte.php';
+           ?>
         </div>
         <div class="col-3">L</div>
     </div>
