@@ -50,11 +50,9 @@
     <div class="row">
         <div class="col-3">M</div>
         <div class="col-6">
-            <form action="twite.php" method="POST">
-                <textarea name="artic">
-                </textarea>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            <?php
+                print_r($_POST); 
+            ?>
         </div>
         <div class="col-3">L</div>
     </div>
@@ -64,4 +62,3 @@
 </footer>
 </body>
 </html>
-
